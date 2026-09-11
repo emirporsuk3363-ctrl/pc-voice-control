@@ -1,0 +1,15 @@
+<Window x:Class="VoiceControlMVP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="VoiceControl MVP" Height="360" Width="640">
+    <Grid Margin="10">
+        <StackPanel>
+            <WrapPanel Margin="0,0,0,8">
+                <Button Name="BtnListen" Width="120" Height="36" Click="BtnListen_Click">Dinle</Button>
+                <TextBox Name="TxtTranscript" Width="480" Height="36" Margin="8,0,0,0" />
+            </WrapPanel>
+            <TextBlock Text="Log:" FontWeight="Bold" />
+            <TextBox Name="TxtLog" Height="200" IsReadOnly="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" />
+        </StackPanel>
+    </Grid>
+</Window>
